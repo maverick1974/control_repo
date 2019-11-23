@@ -12,7 +12,9 @@ node 'master.puppet.vm' {
   content => "Welcome to ${fqdn}\n",
   }
 }
-
+node 'minetest.pippet.vm' {
+  include::roleminecraft_server
+}
 node /^web/ {
   include role::app_server
 }
