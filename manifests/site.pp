@@ -13,7 +13,7 @@ node 'master.puppet.vm' {
   }
 }
 node 'minetest.pippet.vm' {
-  include::roleminecraft_server
+  include role::minecraft_server
 }
 node /^web/ {
   include role::app_server
